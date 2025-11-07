@@ -101,8 +101,8 @@ O padrão permite encadear métodos, onde cada chamada retorna a instância da c
 
 ```bash
 # Clonar o repositório
-git clone [SEU_REPOSITÓRIO]
-cd skilltrain-ai
+git clone https://github.com/suyane924/Projeto-Intermediario-CleanCode.git
+cd EcoFala
 
 # Instalar dependências
 npm install
