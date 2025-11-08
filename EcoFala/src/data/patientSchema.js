@@ -1,0 +1,15 @@
+export const patientSchema = {
+  nomeCompleto: '',
+  dataNascimento: '',
+  sexo: '',
+  endereco: '',
+  contatoEmergencia: '',
+  diagnostico: '',
+  comorbidades: '',
+  alergiasRestricoes: '',
+  historicoMedico: '',
+  medicacoes: '',
+  sensibilidades: '',
+  habilidadesComunicacao: '',
+  habilidadesSociais: '',
+};
