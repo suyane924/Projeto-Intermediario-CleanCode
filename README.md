@@ -72,13 +72,13 @@ Recomenda-se o uso do **Jest** para testes unitários.
 | Cobertura de Funções | 0% |
 | Cobertura de Branches | 0% |
 
-**Meta:** Atingir **mínimo de 80%** de cobertura de testes unitários na camada de serviços antes de novas funcionalidades.
+**Meta:** Atingir **mínimo de 50%** de cobertura de testes unitários.
 
 ---
 
 ## 🖋️ 5. Implementação de Interface Fluente (Fluent Interface)
 
-Embora ainda não implementada, a **Interface Fluente** é ideal para criação de cenários ou relatórios complexos, tornando o código mais legível e configurável.
+A **Interface Fluente** é ideal para criação de cenários ou relatórios complexos, tornando o código mais legível e configurável.
 
 ### Cenário Proposto: `ReportBuilder` (Construtor de Relatórios)
 
@@ -102,7 +102,7 @@ O padrão permite encadear métodos, onde cada chamada retorna a instância da c
 ```bash
 # Clonar o repositório
 git clone https://github.com/suyane924/Projeto-Intermediario-CleanCode.git
-cd EcoFala
+cd Projeto-Intermediario-CleanCode
 
 # Instalar dependências
 npm install
