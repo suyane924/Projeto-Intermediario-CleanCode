@@ -52,8 +52,7 @@ A refatoração proposta visa o **desacoplamento** e a criação de uma **arquit
 
 ### 4.1. Testes Implementados
 
-Nenhum teste automatizado foi implementado na base atual.  
-Recomenda-se o uso do **Jest** para testes unitários.
+Foi utilizado o **Jest** para a realização dos testes unitários.
 
 #### Áreas de Foco para Testes
 
