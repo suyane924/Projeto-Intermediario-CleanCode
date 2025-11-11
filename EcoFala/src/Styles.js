@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 
 const globalStyles = StyleSheet.create({
-
   // Estilos da tela de login
   loginContainer: {
     flex: 1,
@@ -19,8 +18,8 @@ const globalStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
   logoImage: {
-    width: 300, 
-    height: 300, 
+    width: 300,
+    height: 300,
   },
   input: {
     width: '100%',
@@ -60,7 +59,7 @@ const globalStyles = StyleSheet.create({
   // Estilos do menu
   menuContainer: {
     flex: 1,
-    backgroundColor: '#FFF', 
+    backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -68,14 +67,14 @@ const globalStyles = StyleSheet.create({
   menuButton: {
     width: '80%',
     height: 50,
-    backgroundColor: '#72C3B2', 
+    backgroundColor: '#72C3B2',
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 10, 
+    marginVertical: 10,
   },
   menuButtonText: {
-    color: '#FFF', 
+    color: '#FFF',
     fontSize: 18,
     fontWeight: 'bold',
   },
@@ -109,18 +108,18 @@ const globalStyles = StyleSheet.create({
   pacienteButton: {
     width: '90%',
     height: 50,
-    backgroundColor: '#72C3B2', 
+    backgroundColor: '#72C3B2',
     borderRadius: 25,
     justifyContent: 'center',
     marginBottom: 40,
     alignItems: 'center',
-    marginVertical: 10, 
+    marginVertical: 10,
   },
 
   // Estilos da tela de cadastro
   cadastroContainer: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: 'white',
   },
   scrollContainer: {
     padding: 8,
@@ -189,10 +188,10 @@ const globalStyles = StyleSheet.create({
     marginTop: 5,
     fontSize: 14,
   },
-  
+
   // Estilo da tela de gerar cenário
   inputCenario: {
-    width: '90%', 
+    width: '90%',
     height: 50,
     borderColor: '#165C4D',
     borderWidth: 1,
@@ -202,7 +201,7 @@ const globalStyles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   textAreaCenario: {
-    width: '90%', 
+    width: '90%',
     height: 200,
     borderColor: '#165C4D',
     borderWidth: 1,
@@ -213,7 +212,7 @@ const globalStyles = StyleSheet.create({
   },
   cenarioContainer: {
     flex: 1,
-    justifyContent: 'center', 
+    justifyContent: 'center',
     alignItems: 'center',
     padding: 0.5,
   },
@@ -228,13 +227,13 @@ const globalStyles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 36,
   },
-  
+
   // Estilo da tela de feedback
   feedbackContainer: {
     flex: 1,
-    justifyContent: 'center', 
+    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: "white",
+    backgroundColor: 'white',
     padding: 20,
   },
   feedbackScrollContainer: {
@@ -271,18 +270,18 @@ const globalStyles = StyleSheet.create({
 
   relatorioContainer: {
     flex: 1,
-    justifyContent: 'center', 
-    alignItems: 'flex-start', 
-    backgroundColor: "white",
-    padding: 20, 
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    backgroundColor: 'white',
+    padding: 20,
   },
   relatorioLabel: {
     fontSize: 18,
     marginTop: 10,
-    fontWeight: '600', 
+    fontWeight: '600',
     marginBottom: 10,
     textAlign: 'left',
-    width: '100%', 
+    width: '100%',
   },
   relatorioTextInput: {
     height: 150,
@@ -291,15 +290,15 @@ const globalStyles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 20,
     backgroundColor: '#fff',
-    textAlignVertical: 'top', 
+    textAlignVertical: 'top',
     width: '100%',
   },
   relatorioButtonContainer: {
     flexDirection: 'row',
-    justifyContent: 'center', 
+    justifyContent: 'center',
     alignItems: 'center',
-    width: '100%', 
-    marginTop: 30, 
+    width: '100%',
+    marginTop: 30,
   },
 
   // Estilos tela de cenario
@@ -332,7 +331,6 @@ const globalStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
   },
-  
 });
 
 export default globalStyles;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-native';
-import globalStyles from '../../Styles';
-import ToastMessage from '../../components/ToastMessage';
+import globalStyles from '../Styles';
+import ToastMessage from '../components/ToastMessage';
 
 export default function GerarCenario({ navigation }) {
   const [cenario, setCenario] = useState({
@@ -19,7 +19,7 @@ export default function GerarCenario({ navigation }) {
   const handleChange = (field, value) => setCenario({ ...cenario, [field]: value });
 
   const handleSubmit = () => {
-    const camposVazios = Object.values(cenario).some(valor => valor.trim() === '');
+    const camposVazios = Object.values(cenario).some((valor) => valor.trim() === '');
     if (camposVazios) {
       showToast('Erro: Por favor, preencha todos os campos.', 'error');
       return;

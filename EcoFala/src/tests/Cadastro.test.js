@@ -1,6 +1,5 @@
-import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import Cadastro from '../src/screens/Cadastro';
+import Cadastro from '../screens/Cadastro';
 
 describe('Cadastro', () => {
   const mockNavigation = { navigate: jest.fn() };

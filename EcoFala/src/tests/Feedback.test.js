@@ -1,6 +1,5 @@
-import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import Feedback from '../src/screens/Feedback';
+import Feedback from '../screens/Feedback';
 
 describe('Feedback', () => {
   test('renderiza todos os campos de feedback', () => {

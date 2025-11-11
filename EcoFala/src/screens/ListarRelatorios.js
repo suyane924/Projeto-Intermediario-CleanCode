@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import globalStyles from '../../Styles';
+import globalStyles from '../Styles';
 import { showToast } from '../components/ToastMessage';
 
 export default function ListarRelatorios({ navigation }) {

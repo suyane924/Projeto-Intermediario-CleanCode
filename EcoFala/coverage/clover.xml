@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1762830171426" clover="3.2.0">
+  <project timestamp="1762830171426" name="All files">
+    <metrics statements="67" coveredstatements="52" conditionals="25" coveredconditionals="15" methods="31" coveredmethods="20" elements="123" coveredelements="87" complexity="0" loc="67" ncloc="67" packages="5" files="8" classes="8"/>
+    <package name="src">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Styles.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\Styles.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="11" coveredstatements="9" conditionals="9" coveredconditionals="5" methods="5" coveredmethods="3"/>
+      <file name="ToastMessage.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\components\ToastMessage.js">
+        <metrics statements="11" coveredstatements="9" conditionals="9" coveredconditionals="5" methods="5" coveredmethods="3"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="feedbackSchema.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\data\feedbackSchema.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="patientSchema.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\data\patientSchema.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.screens">
+      <metrics statements="34" coveredstatements="22" conditionals="6" coveredconditionals="1" methods="19" coveredmethods="10"/>
+      <file name="Cadastro.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\screens\Cadastro.js">
+        <metrics statements="18" coveredstatements="9" conditionals="3" coveredconditionals="0" methods="10" coveredmethods="4"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="26" type="stmt"/>
+        <line num="34" count="26" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+      <file name="Feedback.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\screens\Feedback.js">
+        <metrics statements="16" coveredstatements="13" conditionals="3" coveredconditionals="1" methods="9" coveredmethods="6"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="33" count="21" type="stmt"/>
+        <line num="35" count="21" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services">
+      <metrics statements="19" coveredstatements="18" conditionals="10" coveredconditionals="9" methods="7" coveredmethods="7"/>
+      <file name="authService.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\services\authService.js">
+        <metrics statements="7" coveredstatements="6" conditionals="8" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="reportBuilder.js" path="C:\Users\suy4a\Projeto-Intermediario-CleanCode\EcoFala\src\services\reportBuilder.js">
+        <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -39,10 +39,7 @@ export default function Pacientes({ navigation }) {
         )}
       />
 
-      <TouchableOpacity
-        style={globalStyles.pacienteButton}
-        onPress={handleAddPaciente}
-      >
+      <TouchableOpacity style={globalStyles.pacienteButton} onPress={handleAddPaciente}>
         <Text style={globalStyles.menuButtonText}>ADICIONAR PACIENTE</Text>
       </TouchableOpacity>
     </View>

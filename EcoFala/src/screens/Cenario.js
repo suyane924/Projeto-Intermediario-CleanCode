@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, Image, Button, View, Alert, ScrollView } from 'react-native';
-import globalStyles from '../../Styles';
+import globalStyles from '../Styles';
 
 const storyParts = [
   {
-    text: "Era uma vez, em uma terra distante, um jovem aventureiro...",
-    image: "https://example.com/image1.jpg",
+    text: 'Era uma vez, em uma terra distante, um jovem aventureiro...',
+    image: 'https://example.com/image1.jpg',
     choices: {
-      correct: "Seguir pela estrada.",
-      incorrect: "Entrar na floresta escura.",
+      correct: 'Seguir pela estrada.',
+      incorrect: 'Entrar na floresta escura.',
     },
   },
   {
-    text: "Ele encontrou uma ponte mágica que levava a um reino encantado.",
-    image: "https://example.com/image2.jpg",
+    text: 'Ele encontrou uma ponte mágica que levava a um reino encantado.',
+    image: 'https://example.com/image2.jpg',
     choices: {
-      correct: "Atravessar a ponte.",
-      incorrect: "Voltar para casa.",
+      correct: 'Atravessar a ponte.',
+      incorrect: 'Voltar para casa.',
     },
   },
 ];
@@ -40,7 +40,7 @@ export default function Cenario() {
   };
 
   const handleReadAloud = () => {
-    console.log("Ler em voz alta:", storyParts[currentPart].text);
+    console.log('Ler em voz alta:', storyParts[currentPart].text);
   };
 
   const handleRepeat = () => {

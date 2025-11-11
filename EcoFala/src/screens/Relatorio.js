@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, TextInput, View, TouchableOpacity, ScrollView } from 'react-native';
-import globalStyles from '../../Styles';
-import ReportBuilder from '../services/ReportBuilder';
-import ModalMessage from '../components/ModalMessage'; 
+import globalStyles from '../Styles';
+import ReportBuilder from '../services/reportBuilder';
+import ModalMessage from '../components/ModalMessage';
 
 export default function Relatorio() {
   const [paciente, setPaciente] = useState('João Silva');
@@ -70,30 +70,27 @@ export default function Relatorio() {
           multiline
         />
 
-        <TouchableOpacity
-          style={globalStyles.cadastroButton}
-          onPress={handleGerarRelatorio}
-        >
+        <TouchableOpacity style={globalStyles.cadastroButton} onPress={handleGerarRelatorio}>
           <Text style={globalStyles.cadastroButtonText}>Gerar Relatório</Text>
         </TouchableOpacity>
 
         {gerado && (
           <View style={globalStyles.relatorioContentContainer}>
             <Text style={globalStyles.relatorioText}>
-              <Text style={{ fontWeight: 'bold' }}>Paciente:</Text> {gerado.patient}{'\n'}
-              <Text style={{ fontWeight: 'bold' }}>Período:</Text> {gerado.dateRange.startDate} até {gerado.dateRange.endDate}{'\n'}
-              <Text style={{ fontWeight: 'bold' }}>Feedback:</Text> {gerado.feedback.join(', ')}{'\n'}
+              <Text style={{ fontWeight: 'bold' }}>Paciente:</Text> {gerado.patient}
+              {'\n'}
+              <Text style={{ fontWeight: 'bold' }}>Período:</Text> {gerado.dateRange.startDate} até{' '}
+              {gerado.dateRange.endDate}
+              {'\n'}
+              <Text style={{ fontWeight: 'bold' }}>Feedback:</Text> {gerado.feedback.join(', ')}
+              {'\n'}
               <Text style={{ fontWeight: 'bold' }}>Resumo:</Text> {gerado.summary}
             </Text>
           </View>
         )}
       </ScrollView>
 
-      <ModalMessage
-        visible={!!mensagem}
-        message={mensagem}
-        onClose={() => setMensagem('')}
-      />
+      <ModalMessage visible={!!mensagem} message={mensagem} onClose={() => setMensagem('')} />
     </SafeAreaView>
   );
 }

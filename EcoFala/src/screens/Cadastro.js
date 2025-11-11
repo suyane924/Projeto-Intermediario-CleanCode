@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, ScrollView, TextInput, TouchableOpacity } from 'react-native';
-import globalStyles from '../../Styles';
-import { patientSchema } from '../../data/patientSchema';
-import ToastMessage from '../../components/ToastMessage';
+import globalStyles from '../Styles';
+import { patientSchema } from '../data/patientSchema';
+import ToastMessage from '../components/ToastMessage';
 
 export default function Cadastro({ navigation }) {
   const [paciente, setPaciente] = useState(patientSchema);
@@ -15,7 +15,7 @@ export default function Cadastro({ navigation }) {
   const handleChange = (field, value) => setPaciente({ ...paciente, [field]: value });
 
   const handleSubmit = () => {
-    const camposVazios = Object.values(paciente).some(valor => valor.trim() === '');
+    const camposVazios = Object.values(paciente).some((valor) => valor.trim() === '');
     if (camposVazios) {
       showToast('Erro: Por favor, preencha todos os campos.', 'error');
       return;
@@ -31,7 +31,7 @@ export default function Cadastro({ navigation }) {
         {Object.keys(paciente).map((key) => (
           <SafeAreaView key={key} style={globalStyles.inputContainer}>
             <Text style={globalStyles.label}>
-              {key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+              {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
             </Text>
             <TextInput
               style={globalStyles.cadastroInput}
@@ -41,8 +41,8 @@ export default function Cadastro({ navigation }) {
           </SafeAreaView>
         ))}
 
-        <TouchableOpacity style={globalStyles.cadastroButton} onPress={handleSubmit}>
-          <Text style={globalStyles.cadastroButtonText}>Cadastrar</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Pacientes')}>
+          <Text>Cadastrar</Text>
         </TouchableOpacity>
 
         <ToastMessage

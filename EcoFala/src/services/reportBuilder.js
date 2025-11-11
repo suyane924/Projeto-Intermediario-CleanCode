@@ -1,4 +1,4 @@
-export default class ReportBuilder {
+export default class reportBuilder {
   constructor() {
     this.report = {
       patient: null,
@@ -30,7 +30,7 @@ export default class ReportBuilder {
 
   build() {
     if (!this.report.patient) {
-      throw new Error("O relatório precisa de um paciente definido.");
+      throw new Error('O relatório precisa de um paciente definido.');
     }
     return this.report;
   }

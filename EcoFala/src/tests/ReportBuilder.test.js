@@ -1,4 +1,4 @@
-import ReportBuilder from '../src/services/ReportBuilder';
+import ReportBuilder from '../services/reportBuilder';
 
 describe('ReportBuilder', () => {
   let builder;

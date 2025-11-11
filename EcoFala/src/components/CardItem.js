@@ -19,9 +19,7 @@ export default function CardItem({ title, description, onPress }) {
     <View style={globalStyles.cardContainer}>
       <TouchableOpacity style={globalStyles.menuButton} onPress={handlePress}>
         <Text style={globalStyles.menuButtonText}>{title}</Text>
-        {description ? (
-          <Text style={globalStyles.cardDescription}>{description}</Text>
-        ) : null}
+        {description ? <Text style={globalStyles.cardDescription}>{description}</Text> : null}
       </TouchableOpacity>
 
       {toast && <ToastMessage message={toast} />}

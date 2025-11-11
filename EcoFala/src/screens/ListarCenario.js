@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import globalStyles from '../../Styles';
+import globalStyles from '../Styles';
 import CardItem from '../components/CardItem';
 import { getCenarios } from '../services/cenarioService';
 

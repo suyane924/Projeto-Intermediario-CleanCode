@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, ScrollView, TextInput, TouchableOpacity } from 'react-native';
-import globalStyles from '../../Styles';
-import { feedbackSchema } from '../../data/feedbackSchema';
-import ToastMessage from '../../components/ToastMessage';
+import globalStyles from '../Styles';
+import { feedbackSchema } from '../data/feedbackSchema';
+import ToastMessage from '../components/ToastMessage';
 
 export default function Feedback() {
   const [feedback, setFeedback] = useState(feedbackSchema);
@@ -15,7 +15,7 @@ export default function Feedback() {
   const handleChange = (field, value) => setFeedback({ ...feedback, [field]: value });
 
   const handleSubmit = () => {
-    const camposVazios = Object.values(feedback).some(valor => valor.trim() === '');
+    const camposVazios = Object.values(feedback).some((valor) => valor.trim() === '');
     if (camposVazios) {
       showToast('Erro: Por favor, preencha todos os campos.', 'error');
       return;
@@ -32,7 +32,7 @@ export default function Feedback() {
         {Object.keys(feedback).map((key) => (
           <SafeAreaView key={key} style={globalStyles.feedbackInputContainer}>
             <Text style={globalStyles.feedbackLabel}>
-              {key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+              {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
             </Text>
             <TextInput
               style={globalStyles.feedbackInput}

@@ -25,11 +25,7 @@ export default function Login({ navigation }) {
   return (
     <View style={globalStyles.loginContainer}>
       <View style={globalStyles.logoContainer}>
-        <Image
-          source={require('./logo.png')}
-          style={globalStyles.logoImage}
-          resizeMode="contain"
-        />
+        <Image source={require('./logo.png')} style={globalStyles.logoImage} resizeMode="contain" />
       </View>
 
       <TextInput

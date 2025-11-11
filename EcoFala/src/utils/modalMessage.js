@@ -10,10 +10,7 @@ export default function ModalMessage({ visible, title, message, onClose }) {
         <View className="bg-white p-6 rounded-2xl w-3/4">
           <Text className="text-lg font-bold mb-2">{title}</Text>
           <Text className="mb-4">{message}</Text>
-          <TouchableOpacity
-            className="bg-blue-500 rounded-xl p-2"
-            onPress={onClose}
-          >
+          <TouchableOpacity className="bg-blue-500 rounded-xl p-2" onPress={onClose}>
             <Text className="text-white text-center font-semibold">OK</Text>
           </TouchableOpacity>
         </View>
