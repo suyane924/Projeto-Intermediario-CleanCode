@@ -1,8 +1,7 @@
 # EcoFala: Plataforma de Treinamento de Habilidades Sociais Para Crianças Autistas
 
----
-
-## Equipe
+--- 
+## 🫂 Equipe
 Gabriel Tarciso Macieiski  
 Suyane Bonfanti dos Santos
 
@@ -60,19 +59,17 @@ Recomenda-se o uso do **Jest** para testes unitários.
 
 | Tipo de Teste | Componentes e Serviços | Foco |
 |----------------|------------------------|-------|
-| **Testes Unitários** | `authService.js`, `patientService.js` | Validação de login, erros e persistência de dados. |
-| **Testes de Componentes** | `Cadastro.js`, `Feedback.js` | Renderização e validação de formulários. |
-| **Testes de Integração** | Fluxo Login → Pacientes → Menu | Simulação da navegação e interação entre camadas. |
+| **Testes Unitários** | `authService.js`, `reportBuilder.js` | Validação de login, geração de relatórios e persistência de dados. |
+| **Testes de Componentes** | `Cadastro.js`, `Feedback.js`, `ToastMessage.js` | Renderização e validação de formulários, mensagens de toast. |
+| **Testes de Integração** | Fluxo Cadastro → Feedback → Relatórios | Simulação da navegação e interação entre camadas. |
 
 ### 4.2. Cobertura Atingida
 
 | Tipo de Cobertura | Status Atual |
 |--------------------|--------------|
-| Cobertura de Linhas | 0% |
-| Cobertura de Funções | 0% |
-| Cobertura de Branches | 0% |
-
-**Meta:** Atingir **mínimo de 50%** de cobertura de testes unitários.
+| Cobertura de Linhas | 77.61% |
+| Cobertura de Funções | 64.51% |
+| Cobertura de Branches | 60% |
 
 ---
 
@@ -93,9 +90,8 @@ O padrão permite encadear métodos, onde cada chamada retorna a instância da c
 ## 📥 6. Descrição da Instalação e Execução
 
 ### 🧩 Pré-requisitos
-- Node.js (versão LTS recomendada)  
+- Node.js 
 - Expo CLI → `npm install -g expo-cli`  
-- Conta e projeto no Firebase (para persistência de dados)
 
 ### ⚙️ Passos para Instalação
 
@@ -117,5 +113,38 @@ yarn install
 npx expo start
 ```
 Escaneie o QR Code exibido no terminal com o aplicativo Expo Go no seu dispositivo mobile ou utilize um simulador.
+
+## 📋 Testes
+
+### Rodar todos os testes 
+
+```bash
+npm test
+```
+
+### Cobertura dos testes
+
+```bash
+npx jest --coverage
+```
+Observação: cobertura atual está em ~75% das linhas. 🤓☝️
+
+## 🔎 ESLint
+
+### Verificar problemas no código
+
+```bash
+npm run lint
+```
+
+### Corrigir problemas automaticamente
+
+```bash
+npm run lint -- --fix
+```
+
+
+
+
 
 
