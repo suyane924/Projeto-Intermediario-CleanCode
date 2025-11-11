@@ -76,7 +76,7 @@ Esta versão combina a **refatoração inicial de Clean Code** com **testes auto
 
 ---
 
-### 🐛 Corrigido (Fixed)
+### 🐛 Corrigido 
 
 * Navegação entre telas (`Login.js` e `Pacientes.js`) corrigida para garantir fluxo correto.
 * Validação de formulários (`Cadastro.js` e `Feedback.js`) corrigida para evitar erros de referência a campos inexistentes.
