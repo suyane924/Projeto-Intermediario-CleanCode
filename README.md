@@ -41,7 +41,7 @@ A refatoração proposta visa o **desacoplamento** e a criação de uma **arquit
 
 | Estratégia | Objetivo | Implementação Arquitetural |
 |-------------|-----------|-----------------------------|
-| **Separação de Preocupações (SoC)** | Isolar UI, Dados e Serviços. | Criação das pastas `src/services`, `src/data`, e `src/components`. A camada de serviços se comunica com o Firebase. |
+| **Separação de Preocupações (SoC)** | Isolar UI, Dados e Serviços. | Criação das pastas `src/services`, `src/data`, e `src/components`. |
 | **DRY e Componentização** | Eliminar código repetido. | Extração de itens de lista para componentes `Card` (`PatientCard.js`, `CenarioCard.js`) e criação de `ModalMessage.js` para mensagens. |
 | **Refatoração de Estado** | Melhorar legibilidade e robustez de formulários. | Substituição de arrays por objetos nomeados e uso de *schemas* (`feedbackSchema.js`, `patientSchema.js`). |
 | **Substituição de Alertas** | Melhorar UX. | Implementação de componente de `Modal/Toast` reutilizável para mensagens. |
